@@ -38,11 +38,11 @@ def imprime_mensagem_abertura():
     print("*********************************")
 
 
-def carrega_palavra_secreta():
+def carrega_palavra_secreta(nome_arquivo="palavras.txt"):
 
     palavras = []
 
-    with open('palavras.txt', encoding = 'utf-8') as arquivo:
+    with open(nome_arquivo, encoding='utf-8') as arquivo:
         for linha in arquivo:
             linha = linha.strip()
             palavras.append(linha)
